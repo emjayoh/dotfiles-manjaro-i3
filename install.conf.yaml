@@ -1,5 +1,14 @@
+- defaults:
+    link:
+      relink: true
+      create: true
+      force: true
+      
 - clean: ['~']
 
+- shell:
+  - [git submodule update --init --recursive, Installling submodules]
+  
 - link:
     ~/.profile: profile
     ~/.bash_profile: bash_profile
@@ -7,8 +16,42 @@
     ~/.bash_logout: bash_logout
     ~/.Xresources: Xresources
     ~/.xinitrc: xinitrc
-    ~/.i3:
-        path: i3/
-        create: true
+    ~/.i3: i3/
+    ~/.config/compton.conf: compton.conf
+ 
 
-
+- pacaur:
+    - emacs
+    - adobe-source-code-pro-fonts
+    - tmux
+    - alsamixer
+    - reflector
+    - atom-editor-bin
+    - base-devel
+    - mpv
+    - mpd-git
+    - ncmpcpp-git
+    - gimp
+    - electrum
+    - steam
+    - stow
+    - ranger
+    - rhythmbox
+    - geany
+    - feh
+    - firefox
+    - chromium
+    - spotify
+    - google-chrome-beta
+    - opera
+    - htop
+    - chromium-widevine
+    - ttf-fantasque-sans
+    - chromium-pepper-flash
+    - command-not-found
+    - dtrx
+    - sublime-text-dev
+    - popcorntime-bin
+    - ttf-ms-fonts
+    - copyq
+    

@@ -4,6 +4,3 @@
 [submodule "dotbot-pacaur"]
 	path = dotbot-pacaur
 	url = https://github.com/ajlende/dotbot-pacaur
-[submodule "prezto"]
-	path = prezto
-	url = https://github.com/emjayoh/prezto.git
